@@ -296,9 +296,9 @@ Easier **for you** to follow up
 
 
 
-## Examples for empty slides
+# Examples for empty slides
 
-- Separate a new slide with no title using three dashes
+Separate a new slide with no title using three dashes
 
 ---
 
