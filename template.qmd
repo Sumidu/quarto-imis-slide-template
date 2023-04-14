@@ -1,5 +1,6 @@
 ---
 title: "Template Presentation for Quarto"
+subtitle: "Subtitle"
 author: 
   - name: "First Name Last Name"
     url: https://mypersonalhomepage.de
@@ -9,9 +10,14 @@ author:
     url: https://mypersonalhomepage.de
     affiliation: University of Lübeck
     affiliation-url: https://www.imis.uni-luebeck.de
+date: "04/14/2023"
 citation:
   url: https://example.com/link_to_permanent_location_of_these_slides
 bibliography: references.bib
+output-dir: docs        
+number-sections: false
+mouse-wheel: true
+hide-inactive-cursor: true
 format: 
   revealjs:
     logo: "logo.png"
@@ -23,7 +29,8 @@ format:
     # csl: themes/acm.csl # add a CSL for different styls
     # theme: "themes/my_dark.scss" # for dark backgrounds
     html-math-method: mathjax # can help with broken mathjax
-    slide-number: true        
+    self-contained-math: false # only activate when needed, large output file
+    slide-number: true
   pptx: 
     footer: "Title - date"
     reference-doc: themes/template_imis.pptx
