@@ -1,0 +1,307 @@
+---
+title: "Template Presentation for Quarto"
+author: 
+  - name: "First Name Last Name"
+    url: https://mypersonalhomepage.de
+    affiliation: University of Lübeck
+    affiliation-url: https://www.imis.uni-luebeck.de
+  - name: "Second First Name Last Name"
+    url: https://mypersonalhomepage.de
+    affiliation: University of Lübeck
+    affiliation-url: https://www.imis.uni-luebeck.de
+citation:
+  url: https://example.com/link_to_permanent_location_of_these_slides
+bibliography: references.bib
+format: 
+  revealjs:
+    logo: "logo.png"
+    footer: "Title - Date"
+    code-link: true
+    code-fold: true
+    embed-resources: true
+    citations-hover: true
+    # csl: acm.csl # add a CSL for different styls
+    slide-number: true        
+  pptx: 
+    footer: "Title - date"
+    reference-doc: themes/template_imis.pptx
+    logo: "logo.png"
+    date: "02/23/2023"
+---
+
+# What is quarto?
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+
+## Quarto has column support
+
+:::: {.columns}
+
+::: {.column width="40%"}
+contents...
+:::
+
+::: {.column width="60%"}
+contents...
+:::
+
+::::
+
+
+## Showing code
+
+```{r}
+1+2
+```
+
+## Speaker notes
+
+Press `s` to enter presentation mode.
+
+::: {.notes}
+Speaker notes go here. And you can save online.
+:::
+
+## More on Quarto
+
+Especially the reveal.js part: 
+
+[https://quarto.org/docs/presentations/revealjs/demo/](https://quarto.org/docs/presentations/revealjs/demo/)
+
+::: {.callout-tip}
+## Tip With Caption
+
+This is an example of a callout with a caption.
+:::
+
+## References
+
+You can cite bibtex references, e.g., your own work [@calero2020making]
+
+
+## Air Quality
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{r}
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+
+library(ggplot2)
+
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess")
+```
+
+  
+
+
+
+## 8 Pillars of open science
+
+The EC [^1] states that the 8 pillars of Open Science are ...
+
+:::: {.columns}
+
+::: {.column width="50%" .incremental}
+
+- FAIR Data 
+- Research Integrity & reproducibility of scientific results
+- Next Generation Metrics 
+- Future of Scholarly Communication
+
+:::
+
+::: {.column width="50%" .incremental}
+
+- Citizen Science 
+- Education and Skills 
+- Rewards & Incentives
+- European Open Science Cloud (EOSC)
+
+:::
+
+::::
+[^1]: 
+https://research-and-innovation.ec.europa.eu/strategy/strategy-2020-2024/our-digital-future/open-science_en
+
+
+
+
+## 8 Pillars of open science
+
+The EC [^*] states that the 8 pillars of Open Science are ...
+
+:::: {.columns}
+
+::: {.column width="50%" }
+
+- **FAIR Data**
+- Research Integrity & **reproducibility of scientific results**
+- Next Generation Metrics 
+- **Future of Scholarly Communication**
+
+:::
+
+::: {.column width="50%" }
+
+- Citizen Science 
+- **Education and Skills**
+- Rewards & Incentives
+- European Open Science Cloud (EOSC)
+
+:::
+
+::::
+[^*]: 
+https://research-and-innovation.ec.europa.eu/strategy/strategy-2020-2024/our-digital-future/open-science_en
+
+
+
+## FAIR Data
+
+- Findable – making research outputs discoverable by the wider academic community and the public,
+- Accessible – using unique identifiers, metadata and a clear use of language and access protocols,
+- Interoperable – applying standards to encode and exchange data and metadata and...
+- Reusable – enabling the repurposing of research outputs to maximise their research potential.
+
+
+## Reproducibility
+
+Studies funded by the OSF found only 50% of findings replicate
+
+#### Reasons
+
+- Bad research design
+- HARKing, p-hacking
+
+#### Problems
+
+- Lack of analysis code availability
+- Lack of raw data availability
+- Problems with reproduction efforts
+
+
+## What is reproducibility? 
+
+![](figures/rr.png){.absolute top=50 right=50 width="200" height="200"}
+
+#### Computational reproducibility
+
+- access to code and data 
+- Others can reproduce your results.
+
+#### Empirical reproducibility
+- sufficient information to recreate experiments or copy the study
+
+#### Replicability
+- quality of an outcome and a study
+- not discussed here
+
+
+
+## Future of Scholarly Communication
+
+Science communication has to adapt.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Science and peer-reviewed publications should be **publicly accessible**.
+- **Multiple output formats** for different types of audiences
+
+What are **tools** that support this outcome?
+
+:::
+
+::: {.column width="40%"}
+
+![](figures/openscience_wheel.png)
+
+:::
+
+::::
+
+## New publication formats
+
+![](figures/open_access_wheel.png)
+
+## Education and Skills
+
+Researchers must learn to apply open science principles [@skillseu].
+
+
+- library and information skills
+- open publication literacy skills
+- data management and open data skills
+- data science skills
+- etc. 
+
+![](figures/openscience_process.png){.absolute top=150 right=-50 width="400" height="280"}
+
+# Why do open science?
+
+## Why do open science?
+
+#### Value-based reasons 
+
+- increases rigour, accountability, and reproducibility
+- based on inclusion, fairness, equity, and sharing
+- We get paid by the public, our results should be public
+
+
+
+## Why do open science?
+
+#### Benefits of open science
+
+- Open research gets more attention
+  - easier to cite
+  - easier for others to work with
+
+. . .
+
+Easier **for you** to follow up
+
+
+
+
+## Examples for empty slides
+
+- Separate a new slide with no title using three dashes
+
+---
+
+![Figure Caption below the figure](figures/orcid.png){width=80%}
+
+## {background-image="figures/osf_login.png"}
+
+
+
+## {background-video="http://techslides.com/demos/sample-videos/small.mp4" background-size="contain"}
+
+::: {.centered}
+You can use video backgrounds
+:::
+## References
