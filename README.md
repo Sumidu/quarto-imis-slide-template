@@ -9,7 +9,7 @@ Extensions of this template are welcome :)
 
 ## Requirements
 
-This template requires quarto (version 1.2.269+) and uses `renv` to manage dependencies.
+This template requires [quarto](https://quarto.org/) (version 1.2.269+) and uses `renv` to manage dependencies.
 
 You can restore the project after installing it by calling executing the following code in your R console:
 
