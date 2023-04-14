@@ -20,7 +20,9 @@ format:
     code-fold: true
     embed-resources: true
     citations-hover: true
-    # csl: acm.csl # add a CSL for different styls
+    # csl: themes/acm.csl # add a CSL for different styls
+    # theme: "themes/my_dark.scss" # for dark backgrounds
+    html-math-method: mathjax # can help with broken mathjax
     slide-number: true        
   pptx: 
     footer: "Title - date"
