@@ -2,9 +2,22 @@
 
 This is a template project for making slides in quarto using the IMIS logo.
 
-The repository home is: https://github.com/Sumidu/quarto-imis-slide-template
+The repository home is: https://github.com/Sumidu/quarto-imis-slide-template.
+Check back frequently for updates.
 
 Extensions of this template are welcome :)
+
+## Requirements
+
+This template requires quarto (version 1.2.269+) and uses `renv` to manage dependencies.
+
+You can restore the project after installing it by calling executing the following code in your R console:
+
+```
+install.packages("renv")
+renv::restore()
+``` 
+
 
 ## Hosting reveal.js presentations on Github
 
